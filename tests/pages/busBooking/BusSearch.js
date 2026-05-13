@@ -9,7 +9,7 @@ class BusSearch {
     }
 
     async navigate(url) {
-        await this.page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 });
+        await this.page.goto(url, { timeout: 15000 });
         await expect(this.page).toHaveURL(/\/buses(?:\/|$)/);
         await this.page.waitForLoadState('networkidle').catch(() => {});
     }
@@ -19,6 +19,7 @@ class BusSearch {
         await expect(this.source).toBeEnabled();
         await this.source.fill(source);
         await expect(this.source).toHaveValue(source);
+        await this.page.waitForTimeout(1000);
         await this.page.keyboard.press('Enter');
     }
     
@@ -26,11 +27,13 @@ class BusSearch {
         await expect(this.destination).toBeVisible();
         await expect(this.destination).toBeEnabled();
         await this.destination.fill(destination);
+        await this.page.waitForTimeout(1000);
         await expect(this.destination).toHaveValue(destination);
         await this.page.keyboard.press('Enter');
     }
 
     async search() {
+        await this.page.waitForTimeout(500);
         await expect(this.searchButton).toBeVisible();
         await expect(this.searchButton).toBeEnabled();
         await this.searchButton.click();
