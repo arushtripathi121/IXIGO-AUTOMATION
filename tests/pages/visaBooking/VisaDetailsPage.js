@@ -21,7 +21,7 @@ class VisaDetailsPage {
         await expect(this.continue).toBeEnabled();
         await this.continue.click();
         await Promise.race([
-            this.page.waitForNavigation({ waitUntil: 'networkidle', timeout: 5000 }).catch(() => {}),
+            this.page.waitForNavigation({timeout: 5000 }),
             this.page.waitForTimeout(3000)
         ]);
         return this.page;

@@ -1,3 +1,4 @@
+
 const { chromium, firefox, webkit } = require("@playwright/test");
 const fs = require("fs");
 require("dotenv").config();
@@ -29,15 +30,17 @@ async function saveAuthenticatedSession() {
 
   const browser = await browserEngine.launch({ headless: false });
 
+
   const context = await browser.newContext();
 
   const page = await context.newPage();
 
-  await page.goto("https://www.ixigo.com/");
+  await page.goto("https://www.ixigo.com");
 
-  console.log(`Please complete manual login in the ${browserType} window...`);
 
-  await page.waitForTimeout(60000);
+  await page.waitForTimeout(30000);
+  await page.reload();
+
 
   const outPath = `${stateDir}/${browserType}.json`;
 
@@ -47,6 +50,10 @@ async function saveAuthenticatedSession() {
 
   console.log(`Saved session to ${outPath}`);
 
+
+  console.log("Authenticated session saved successfully");
+
+  await context.close();
   await browser.close();
 }
 

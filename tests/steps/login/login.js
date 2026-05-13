@@ -8,16 +8,7 @@ Given("User should be logged in", async function () {
 
   const browserType = process.env.BROWSER || "chromium";
 
-  const authFile = path.resolve(
-    __dirname,
-    `../../../JSONFiles/${browserType}.json`
-  );
-
-  if (!fs.existsSync(authFile)) {
-    throw new Error(
-      `No saved session found for ${browserType}. Run saveAuthSession.js first.`
-    );
-  }
+  const authFile = path.resolve(__dirname,`../../../JSONFiles/${browserType}.json`);
 
   console.log(`Using saved session: ${authFile}`);
 
@@ -31,8 +22,5 @@ Given("User should be logged in", async function () {
       },
     },
   });
-
   this.page = await this.context.newPage();
-
-  await this.page.goto("https://www.ixigo.com/", { waitUntil: "networkidle" });
 });

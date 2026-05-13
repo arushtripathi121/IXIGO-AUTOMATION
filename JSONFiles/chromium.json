@@ -1,0 +1,322 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwgICj3W3IkCh-CaYs_radscT1dlaREImtk3a_zWFKeKxfH2Tg03fBjfx--jmTlV6QO1N1cvEPZ3Xzd_g1w",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1794162231.335547,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "session_id",
+      "value": "dqb1z5yy4k",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1813170241.336103,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ixiUsrLocale",
+      "value": "\"urgn=-:ucnc=-:ucty=-:cnc=IN:cc=INR:lng=en\"",
+      "domain": "edge-dyn.ixigo.com",
+      "path": "/",
+      "expires": 1778624536.827787,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ixiUID",
+      "value": "6283d57d4dc046ec9968",
+      "domain": ".ixigo.com",
+      "path": "/",
+      "expires": 1813170136.827804,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ixiSrc",
+      "value": "mIHy/Q6usegvcZu5ErnPJnYPjcJOqfg1jBKqi2PXm9LTLOfs2teHHjr6stEP6bEglzDOlweHyKkrwoZ9Trr2kA==",
+      "domain": ".ixigo.com",
+      "path": "/",
+      "expires": 1813170136.827829,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ixigoSrc",
+      "value": "6283d57d4dc046ec9968|DIR:12052026|DIR:12052026|DIR:12052026",
+      "domain": ".ixigo.com",
+      "path": "/",
+      "expires": 1813170136.82785,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "WZRK_G",
+      "value": "6aedad4316214d1480ebfcf2f38fc46a",
+      "domain": ".ixigo.com",
+      "path": "/",
+      "expires": 1810146241,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTPlessInId",
+      "value": "E9311645-C8CA98DA-4000-8-3F5DB2DF-0000DA35E03C-019E1D6CFC9E",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1810146142.366607,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "state",
+      "value": "9b1ec146-f48e-43ac-ad33-f2f874cc90f0",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1810146142.607425,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "6rugneUYR8BGSewHTlYmfK7qxICKdxbDZgylEMMYIzI-1778610168.9220812-1.0.1.1-eTJ5S3vXpHEiJX5QJfduLxIP_ZekHjDkG4meA0B1USM14y26gAtbueUlX.gSZZAL9xJB9vs_GGtR6fFDh7GesfLjoa6RLU2x7Elw9wnhfXJL0iilbrrsm0lHHWljWixh",
+      "domain": ".ixigo.com",
+      "path": "/",
+      "expires": 1778611968.122472,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "NID",
+      "value": "531=bFY6bbG9DKqyvCoLxZY9iExGCBdElRv4aWpN4FXjL4U5CNF47QXfK_W8HmOeuxJzOQioiXv5sZ0MKdb1YQrl_-XEg3u5U6zU9JKWsT3nL9UzqYpiDdY30biuHcNsgDJuxSw3fplAZTl2T4dHkJeHlXepMb_FUqQQuRoHHXeaHldTMOl0EQes9hOPN_TIOElUptnCjg",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1794421422.026306,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "uid",
+      "value": "EC509DEE83E0442DB31269A1D21EE8BC",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1810146230.687024,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sapphire",
+      "value": "63Qy384059JJnNHRJPBy9EgrtI+ML6WKMmJdDZ4nXNlkAfEgFwBGjxUq/dQAdCxqn+VAXpu0LRg3/Y21JsT1X1sL23qSSICrVYptoqkVBmkbFbTk0YlXtIFG41q0s0nupj39JRL6o7U80qA4keqg90bYJlAnC2jC9HlJTIiRgeKXUl0VdkbqiOF/4RKUL0pHL4SIB+JqGmxw2qjyktsVKhP7A4Aemd/+JqHS6d4gEmDUWm3EW2Blt8zcDdwaieK9LR/RCr/EnDg=",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1794162231.461458,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "at",
+      "value": "c2xgb35c53mwont7u1qis9q5c9l8c5fh7u71lhh0usk3hssqd82smw0gqt0dto1qbwwwc9cy30s6nNjMxNzQ2OWNjZmYyMjE2ZDY2NmJhZDY451doiw4e76jfc05sp847l9k7hy6ypxcxksmtsx89u80qkw73gi0ur32pe3iuq7sulv2sjceteafo4wotjr2s18",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1794162231.46152,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "clientId",
+      "value": "ixiweb",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1794162231.461539,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lt",
+      "value": "ol",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1813170231.463271,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "g_state",
+      "value": "{\"i_l\":0,\"i_ll\":1778610231469,\"i_b\":\"EkaSn1+s+wnN4hIwim0f9ZnNFuAPK6aK6z39/F+ERKI\",\"i_e\":{\"enable_itp_optimization\":0},\"i_et\":1778610142163}",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1794162231,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ec",
+      "value": "26",
+      "domain": "www.ixigo.com",
+      "path": "/",
+      "expires": 1810146231.579731,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "WZRK_S_R5Z-849-WZ4Z",
+      "value": "%7B%22p%22%3A7%2C%22s%22%3A1778610137%2C%22t%22%3A1778610241%7D",
+      "domain": ".ixigo.com",
+      "path": "/",
+      "expires": 1778611441,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.ixigo.com",
+      "localStorage": [
+        {
+          "name": "WZRK_QC",
+          "value": "%22%255B%257B%2522msgContent%2522%253A%257B%2522html%2522%253A%2522%253Chtml%253E%255Cn%2520%253Chead%253E%255Cn%2520%2520%253Cstyle%2520type%253D%255C%2522text%252Fcss%255C%2522%253Ebody%257Bfont-family%253A%2520-apple-system%252CBlinkMacSystemFont%252C%255C%2522Segoe%2520UI%255C%2522%252CRoboto%252COxygen%252CUbuntu%252CCantarell%252C%255C%2522Open%2520Sans%255C%2522%252C%255C%2522Helvetica%2520Neue%255C%2522%252Csans-serif%253B%257D.CT_InterstitialOuter%257Bdisplay%253A%2520table%253Bposition%253A%2520fixed%253Btop%253A%25200%253Bleft%253A%25200%253Bheight%253A%2520100%2525%253Bwidth%253A%2520100%2525%253Btransform%253A%2520translateZ(0)%253B%257D.CT_InterstitialWrapper%257Bdisplay%253Atable-cell%253Bvertical-align%253Amiddle%257D.CT_Interstitial%257Bdisplay%253A-webkit-box%253Bdisplay%253A-ms-flexbox%253Bdisplay%253Aflex%253B-webkit-box-align%253Acenter%253B-ms-flex-align%253Acenter%253Balign-items%253Acenter%253B-webkit-box-pack%253Acenter%253Bms-flex-pack%253Acenter%253Bjustify-content%253Acenter%253B-webkit-box-orient%253Avertical%253B-webkit-box-direction%253Anormal%253B-ms-flex-direction%253Acolumn%253Bflex-direction%253Acolumn%253Bwidth%253A100%2525%253Bmax-width%253A600px%253Bmargin-left%253Aauto%253Bmargin-right%253Aauto%253Bpadding%253A20px%253Bbackground-color%253Aundefined%253Bcolor%253Aundefined%253Btext-align%253Acenter%253Bbox-sizing%253Aborder-box%253Bposition%253Arelative%253Bborder-radius%253A8px%257D.CT_InterstitialClose%257Bcursor%253Apointer%253Bposition%253Aabsolute%253Btop%253A-10px%253Bright%253A-10px%253Bz-index%253A2147483647%253Bfont-size%253A18px%253Bfont-weight%253A700%253Btext-decoration%253Anone%253Bwidth%253A25px%253Bheight%253A25px%253Btext-align%253Acenter%253B-webkit-appearance%253Anone%253Bline-height%253A22px%253Bbackground%253A%2523353535%253Bborder%253A2px%2520solid%2520%2523fff%253Bborder-radius%253A100%2525%253Bcolor%253A%2523fff%257D%2540media%2520only%2520screen%2520and%2520(max-width%253A768px)%257B.CT_Interstitial%257Bwidth%253A85%2525%257D%257D%2540media%2520only%2520screen%2520and%2520(max-width%253A480px)%257B.CT_Interstitial%257Bwidth%253A80%2525%257D%257D%253C%252Fstyle%253E%255Cn%2520%253C%252Fhead%253E%255Cn%2520%253Cbody%253E%255Cn%2520%2520%253Cdiv%2520id%253D%255C%2522contentDiv%255C%2522%2520class%253D%255C%2522CT_InterstitialOuter%255C%2522%253E%255Cn%2520%2520%2520%253Cdiv%2520class%253D%255C%2522CT_InterstitialWrapper%255C%2522%253E%255Cn%2520%2520%2520%2520%253Cdiv%2520class%253D%255C%2522CT_Interstitial%255C%2522%253E%255Cn%2520%2520%2520%2520%2520%253Cstyle%2520type%253D%255C%2522text%252Fcss%255C%2522%253E%255Cn.CT_Interstitial%2520%257B%255Cnbackground-color%253A%2520%2523fffeeb%253B%255Cnpadding%253A%25200px%2520!important%253B%255Cnmax-width%253A%252050%2525%253B%255Cnborder-radius%253A%252025px%253B%255Cn%257D%255Cn.popupImg%2520%257B%255Cnborder-radius%253A%252020px%253B%255Cn%257D%255Cn%253C%252Fstyle%253E%2520%253Cbutton%2520id%253D%255C%2522closeButton%255C%2522%2520class%253D%255C%2522btn%255C%2522%2520style%253D%255C%2522position%253A%2520absolute%253B%2520top%253A%252010px%253B%2520right%253A%252010px%253B%2520width%253A%252030px%253B%2520height%253A%252030px%253B%2520border%253A%2520none%253B%2520border-radius%253A%252050%2525%253B%2520background-color%253A%2520black%253B%2520display%253A%2520flex%253B%2520justify-content%253A%2520center%253B%2520align-items%253A%2520center%253B%2520cursor%253A%2520pointer%253B%2520box-shadow%253A%25200%25200%25205px%2520rgba(0%252C%25200%252C%25200%252C%25200.2)%253B%255C%2522%2520wzrk_c2a%253D%255C%2522%255C%2522%253E%2520%253Cspan%2520style%253D%255C%2522font-size%253A%252026px%253B%2520line-height%253A%252016px%253B%2520color%253A%2520white%253B%2520font-weight%253A%2520bold%253B%255C%2522%253E%25C3%2597%253C%252Fspan%253E%2520%253C%252Fbutton%253E%2520%255Cn%2520%2520%2520%2520%2520%253Cimg%2520id%253D%255C%2522popupImage%255C%2522%2520class%253D%255C%2522popupImg%255C%2522%2520src%253D%255C%2522https%253A%252F%252Fimages.ixigo.com%252Fimage%252Fupload%252Fstay55%252Ff9e5f44965173de0659a3e4fddf2ccb6-uctnu.webp%255C%2522%2520style%253D%255C%2522max-width%253A%2520100%2525%253B%255C%2522%253E%2520%255Cn%2520%2520%2520%2520%2520%253Cscript%253E%255Cnvar%2520btn%2520%253D%2520document.getElementById('closeButton')%253B%255Cnvar%2520popupImage%2520%253D%2520document.getElementById('popupImage')%253B%255Cnvar%2520contentDiv%2520%253D%2520document.getElementById('contentDiv')%253B%255Cnvar%2520overlay%2520%253D%2520window.parent.document.getElementById('intentOpacityDiv')%253B%255Cnvar%2520wrapper%2520%253D%2520window.parent.document.getElementById('intentPreview')%253B%255Cn%255Cnbtn.addEventListener('click'%252C%2520closePopUp)%253B%255CncontentDiv.addEventListener('click'%252C%2520handleOutsideClick)%253B%255CnpopupImage.addEventListener('click'%252C%2520navigateToHotels)%253B%255Cn%255Cnfunction%2520closePopUp()%2520%257B%2520%255CnsetTimeout(()%2520%253D%253E%2520%257B%255Cnoverlay.remove()%253B%2520%255Cnwrapper.remove()%253B%255Cn%257D%252C%25200)%253B%2520%255Cn%257D%255Cn%255Cnfunction%2520handleOutsideClick(event)%2520%257B%255CnclosePopUp()%253B%255Cn%257D%255Cn%255Cnfunction%2520navigateToHotels(event)%2520%257B%255Cnevent.stopPropagation()%253B%255Cnwindow.parent.location.href%2520%253D%2520'https%253A%252F%252Fwww.ixigo.com%252Fhotels%253Fsource%253DGrowth%2526subsource%253DWEB_POPUP_STAY55'%253B%255Cn%257D%255Cn%253C%252Fscript%253E%255Cn%2520%2520%2520%2520%253C%252Fdiv%253E%255Cn%2520%2520%2520%253C%252Fdiv%253E%255Cn%2520%2520%253C%252Fdiv%253E%255Cn%2520%253C%252Fbody%253E%255Cn%253C%252Fhtml%253E%2522%252C%2522type%2522%253A1%252C%2522templateType%2522%253A%2522interstitial%2522%257D%252C%2522display%2522%253A%257B%2522layout%2522%253A1%252C%2522custom-html%2522%253A%2522%253Cstyle%2520type%253D%255C%2522text%252Fcss%255C%2522%253E%255Cn.CT_Interstitial%2520%257B%255Cnbackground-color%253A%2520%2523fffeeb%253B%255Cnpadding%253A%25200px%2520!important%253B%255Cnmax-width%253A%252050%2525%253B%255Cnborder-radius%253A%252025px%253B%255Cn%257D%255Cn.popupImg%2520%257B%255Cnborder-radius%253A%252020px%253B%255Cn%257D%255Cn%253C%252Fstyle%253E%255Cn%253Cbutton%2520id%253D%255C%2522closeButton%255C%2522%2520class%253D%255C%2522btn%255C%2522%2520style%253D%255C%2522position%253A%2520absolute%253B%2520top%253A%252010px%253B%2520right%253A%252010px%253B%2520width%253A%252030px%253B%2520height%253A%252030px%253B%2520border%253A%2520none%253B%2520border-radius%253A%252050%2525%253B%2520background-color%253A%2520black%253B%2520display%253A%2520flex%253B%2520justify-content%253A%2520center%253B%2520align-items%253A%2520center%253B%2520cursor%253A%2520pointer%253B%2520box-shadow%253A%25200%25200%25205px%2520rgba(0%252C%25200%252C%25200%252C%25200.2)%253B%255C%2522%253E%255Cn%253Cspan%2520style%253D%255C%2522font-size%253A%252026px%253B%2520line-height%253A%252016px%253B%2520color%253A%2520white%253B%2520font-weight%253A%2520bold%253B%255C%2522%253E%25C3%2597%253C%252Fspan%253E%255Cn%253C%252Fbutton%253E%255Cn%253Cimg%2520id%253D%255C%2522popupImage%255C%2522%2520class%253D%255C%2522popupImg%255C%2522%2520src%253D%255C%2522https%253A%252F%252Fimages.ixigo.com%252Fimage%252Fupload%252Fstay55%252Ff9e5f44965173de0659a3e4fddf2ccb6-uctnu.webp%255C%2522%2520style%253D%255C%2522max-width%253A%2520100%2525%253B%255C%2522%253E%255Cn%253Cscript%253E%255Cnvar%2520btn%2520%253D%2520document.getElementById('closeButton')%253B%255Cnvar%2520popupImage%2520%253D%2520document.getElementById('popupImage')%253B%255Cnvar%2520contentDiv%2520%253D%2520document.getElementById('contentDiv')%253B%255Cnvar%2520overlay%2520%253D%2520window.parent.document.getElementById('intentOpacityDiv')%253B%255Cnvar%2520wrapper%2520%253D%2520window.parent.document.getElementById('intentPreview')%253B%255Cn%255Cnbtn.addEventListener('click'%252C%2520closePopUp)%253B%255CncontentDiv.addEventListener('click'%252C%2520handleOutsideClick)%253B%255CnpopupImage.addEventListener('click'%252C%2520navigateToHotels)%253B%255Cn%255Cnfunction%2520closePopUp()%2520%257B%2520%255CnsetTimeout(()%2520%253D%253E%2520%257B%255Cnoverlay.remove()%253B%2520%255Cnwrapper.remove()%253B%255Cn%257D%252C%25200)%253B%2520%255Cn%257D%255Cn%255Cnfunction%2520handleOutsideClick(event)%2520%257B%255CnclosePopUp()%253B%255Cn%257D%255Cn%255Cnfunction%2520navigateToHotels(event)%2520%257B%255Cnevent.stopPropagation()%253B%255Cnwindow.parent.location.href%2520%253D%2520'https%253A%252F%252Fwww.ixigo.com%252Fhotels%253Fsource%253DGrowth%2526subsource%253DWEB_POPUP_STAY55'%253B%255Cn%257D%255Cn%253C%252Fscript%253E%2522%252C%2522custom-html-format%2522%253A%2522scratch%2522%252C%2522custom-editor%2522%253Atrue%252C%2522custom-html-click-track%2522%253Atrue%252C%2522custom-html-sandbox%2522%253Atrue%252C%2522position-cs%2522%253A%2522center-screen%2522%252C%2522proto%2522%253A%2522template%2522%252C%2522iFrameStyle%2522%253A%2522display%253Ablock%253Boverflow%253Ahidden%253Bposition%253Afixed%253Bwidth%253A%2520100%2525%253Bheight%253A%2520100%2525%253Bz-index%253A2147483647%253Bleft%253A0%253Btop%253A0%2522%252C%2522deliveryTrigger%2522%253A%257B%2522deliveryDelayed%2522%253A%25222%2522%257D%252C%2522wtarget_type%2522%253A0%252C%2522tlc%2522%253A1%252C%2522mdc%2522%253A%25221000%2522%252C%2522adp%2522%253Atrue%252C%2522wmc%2522%253A1%252C%2522ff%2522%253A%2522Desktop%2522%257D%252C%2522wzrk_id%2522%253A%25221778436514_20260512%2522%252C%2522wzrk_pivot%2522%253A%2522wzrk_default%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fin1.dashboard.clevertap.com%252FR5Z-849-WZ4Z%252Fcampaigns%252Fcampaign%252F1778436514%252Freport%252Fstats%2522%257D%255D%22"
+        },
+        {
+          "name": "state",
+          "value": "9b1ec146-f48e-43ac-ad33-f2f874cc90f0"
+        },
+        {
+          "name": "userInfo",
+          "value": "6317469ccff2216d666bad68|c2xgb35c53mwont7u1qis9q5c9l8c5fh7u71lhh0usk3hssqd82smw0gqt0dto1qbwwwc9cy30s6nNjMxNzQ2OWNjZmYyMjE2ZDY2NmJhZDY451doiw4e76jfc05sp847l9k7hy6ypxcxksmtsx89u80qkw73gi0ur32pe3iuq7sulv2sjceteafo4wotjr2s18|ixigoer||||6383604912@ixigo-dummy.com|ol|6383604912|true|91|false|ixigoer|undefined|false|1778610231464|true|Botbalaji"
+        },
+        {
+          "name": "WZRK_L",
+          "value": "%7B%7D"
+        },
+        {
+          "name": "WZRK_WEB_PUSH_CONFIG_RECEIVED",
+          "value": "true"
+        },
+        {
+          "name": "WZRK_APPLICATION_SERVER_KEY_RECIEVED",
+          "value": "true"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gtg_load_status\":{\"status\":3,\"expires\":1778696541702}}"
+        },
+        {
+          "name": "WZRK_K",
+          "value": "%7B%22flag%22%3Atrue%2C%22id%22%3A%226317469ccff2216d666bad68%22%7D"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwg9TIW0gXV16JqrSdlPPdc-rUTV2xUn-tirPNUAnV4pCFTV3hEhRauHIEFyj0S7bHBQLc-l9yiGsqQzpd8c-TPZleVGDXXqOGgj7VEeD7E0m_EMqkb9cHC5jc-e"
+        },
+        {
+          "name": "WZRK_ARP",
+          "value": "%7B%22j_n%22%3A%22Zw%3D%3D%22%2C%22i_n%22%3A%22ZmpjcwYIBwxiaA%3D%3D%22%2C%22d_ts%22%3A0%2C%22dh%22%3A0%2C%22v%22%3A2%2C%22j_s%22%3A%22%7B%7D%22%2C%22id%22%3A%22R5Z-849-WZ4Z%22%2C%22r_ts%22%3A1778610137%7D"
+        },
+        {
+          "name": "perpetualUpsellSource",
+          "value": ""
+        },
+        {
+          "name": "WZRK_X",
+          "value": "%7B%22cache%22%3A%5B%5B%226317469ccff2216d666bad68%22%2C%226aedad4316214d1480ebfcf2f38fc46a%22%5D%5D%7D"
+        },
+        {
+          "name": "WZRK_META",
+          "value": "%7B%22ps%22%3A1778610137%2C%22cs%22%3A1778610137%2C%22sc%22%3A1%7D"
+        },
+        {
+          "name": "WZRK_CAMP_G",
+          "value": "%7B%226aedad4316214d1480ebfcf2f38fc46a%22%3A%7B%22wp%22%3A%7B%221778436514%22%3A%5B%221778436514%22%2C1%2C1%5D%7D%7D%7D"
+        },
+        {
+          "name": "WZRK_FPU",
+          "value": "false"
+        },
+        {
+          "name": "assuredSelected",
+          "value": "false"
+        },
+        {
+          "name": "WZRK_EV",
+          "value": "%7B%22wzrk_fetch%22%3A%5B1%2C1778610136%2C1778610136%5D%2C%22Page%20Visited%22%3A%5B5%2C1778610136%2C1778610241%5D%2C%22Notification%20Viewed%22%3A%5B1%2C1778610139%2C1778610139%5D%2C%22Notification%20Clicked%22%3A%5B1%2C1778610140%2C1778610140%5D%2C%22Login%20Sheet%20Open%22%3A%5B2%2C1778610141%2C1778610213%5D%2C%22Login%20Initiated%22%3A%5B1%2C1778610230%2C1778610230%5D%2C%22Login%20Success%22%3A%5B1%2C1778610231%2C1778610231%5D%7D"
+        },
+        {
+          "name": "selectedFareType",
+          "value": ""
+        },
+        {
+          "name": "fareTypeSelected",
+          "value": "false"
+        },
+        {
+          "name": "uid",
+          "value": "EC509DEE83E0442DB31269A1D21EE8BC"
+        },
+        {
+          "name": "WZRK_ACCOUNT_ID",
+          "value": "%22R5Z-849-WZ4Z%22"
+        },
+        {
+          "name": "ec",
+          "value": "26"
+        },
+        {
+          "name": "OTPlessInId",
+          "value": "E9311645-C8CA98DA-4000-8-3F5DB2DF-0000DA35E03C-019E1D6CFC9E"
+        },
+        {
+          "name": "WZRK_PR",
+          "value": "%7B%22ixiUID%22%3A%226283d57d4dc046ec9968%22%2C%22tz%22%3A%22GMT%2B0530%22%2C%22Name%22%3A%22ixigoer%22%2C%22Phone%22%3A916383604912%2C%22FirstName%22%3A%22ixigoer%22%2C%22Identity%22%3A%226317469ccff2216d666bad68%22%7D"
+        },
+        {
+          "name": "WZRK_G",
+          "value": "%226aedad4316214d1480ebfcf2f38fc46a%22"
+        },
+        {
+          "name": "WZRK_PUSH_CONFIG",
+          "value": "%7B%22showBox%22%3Atrue%2C%22showBellIcon%22%3Afalse%2C%22boxType%22%3A%22old%22%7D"
+        },
+        {
+          "name": "WZRK_CAMP",
+          "value": "%7B%22wp%22%3A%7B%22202642%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%2C%221778610137%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%2C%22global%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%7D%7D"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MTZsNzQ0ZjFkZmhtZHc="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAPQrAobDONthBBZUlNZVM4iR266h2c3Iua7vdLtJ6vqMj80rjzptpMCueVKe21PhGuJpdSk"
+        }
+      ]
+    }
+  ]
+}
