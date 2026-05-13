@@ -1,4 +1,5 @@
 const { expect } = require("@playwright/test");
+const path = require("node:path");
 
 class OrderFood {
     constructor(page) {
@@ -26,6 +27,18 @@ class OrderFood {
         this.errorMsg = await newpage.locator('[class="px-20 pb-20 pt-30 overflow-y-auto text-center no-scrollbar"]');
         await newpage.waitForTimeout(2000);
         if (await this.errorMsg.isVisible()) {
+            const do_nothing=async ()=>{ };
+            this.SelectHotels=do_nothing;
+            this.AddFilters=do_nothing;
+            this.AddProducts=do_nothing;
+            this.ProceedNext=do_nothing;
+            this.PassengerName=do_nothing;
+            this.ContactNo=do_nothing;
+            this.PaymentMethod=do_nothing;
+            this.ProceedContinue=do_nothing;
+            this.PaymentPageLoad=do_nothing;
+            await newpage.screenshot({path:"screenshot/Tfo_invalid pnr.png"})
+            console.log(`In Order Food on Train ,User have entered invalid ${pnr}.So please re-enter your pnr`);
             await newpage.close()
         }
     }
@@ -39,7 +52,7 @@ class OrderFood {
         this.filter_1 = newpage.locator(`(//div[@id="order-menu-filters"]/descendant::div[@class="flex-shrink-0"])[2]`);
         this.filter_2 = newpage.locator(`(//div[@id="order-menu-filters"]/descendant::div[@class="flex-shrink-0"])[3]`);
         await this.filter_1.click();
-        await this.filter_2.click();
+        // await this.filter_2.click();
     }
     async AddProducts(newpage) {
         this.product_1 = newpage.locator(`(//button[text()="Add"])[1]`);
@@ -61,22 +74,25 @@ class OrderFood {
         await this.contact_noTF.fill(contact);
     }
     async PaymentMethod(newpage) {
-        this.payment_methodBtn = newpage.locator("#ZOOP_PG");
+        this.payment_methodBtn = newpage.getByRole('button', { name: 'Pay at Delivery UPI/Cash' });
         await newpage.waitForTimeout(1000);
-        await this.payment_methodBtn.check();
+        await this.payment_methodBtn.click();
     }
-    async ProceedContinue(newpage) {
-        this.proceed_continue = newpage.locator(`._continue-button_hvjmv_1`);
-        await newpage.waitForTimeout(1000);
-        await this.proceed_continue.click();
-    }
+    // async ProceedContinue(newpage) {
+    //     this.proceed_continue = newpage.locator(`._continue-button_hvjmv_1`);
+    //     await newpage.waitForTimeout(1000);
+    //     await this.proceed_continue.click();
+    // }
     async PaymentPageLoad(newpage) {
         try {
-            this.assert = newpage.locator(`//article[text()="Complete your payment"]`);
+            this.assert = newpage.getByRole('heading', { name: 'Order Placed' });
+            this.delivery_detail=newpage.locator('//p[@class="body-lg font-medium"]');
             await newpage.waitForTimeout(5000);
-            await expect(this.assert).toHaveText(/complete payment/)
+            await expect(this.assert).toHaveText(/Order Placed/);
+            const delivery_on=await this.delivery_detail.textContent();
             await newpage.screenshot({ path: "screenshot/payment_page.png" })
-            console.log("Payment page is loaded")
+            console.log("Payment page is loaded");
+            console.log(`Your order wil be delievered on ${delivery_on}`)
         }
         catch (err) {
             console.log("payment page is not loaded", err);

@@ -29,7 +29,7 @@ function PaymentDetails(page) {
                 await this.seat_preferenceBtn.click();
             }
             await this.SaveBtn.click();
-            await this.select_passengers.click();
+            // await this.select_passengers.click();
         }
         async EnterPaymentDetails() {
             await this.mobileTF.fill(data.mobile);
