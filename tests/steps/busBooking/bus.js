@@ -3,6 +3,7 @@ const BusSearch = require("../../pages/busBooking/BusSearch");
 const BusFilters = require("../../pages/busBooking/BusFilters");
 const Payment = require("../../pages/busBooking/Payment");
 const busTestData = require("../../../JSONFiles/busTestData.json");
+const { expect } = require('@playwright/test');
 
 function getBusTestData(testKey) {
     const data = busTestData[testKey];
@@ -126,7 +127,6 @@ Then("the search should show an error message", async function() {
 });
 
 Then("the number of buses should change after applying bus type filters", async function() {
-    const { expect } = require('@playwright/test');
     await this.busFilters.pause(1000);
     const countBefore = await this.busFilters.getBusCount();
     await this.busFilters.applyBusTypeFilters();

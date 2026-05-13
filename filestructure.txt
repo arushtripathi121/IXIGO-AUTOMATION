@@ -20,12 +20,18 @@
 |-- package.json
 |-- playwright.config.js
 |-- screenshot
+    |-- metro.png
+    |-- payment.png
+    |-- runningStatus.png
     |-- screenshot.png
     |-- screenshot1.png
     |-- screenshot2.png
     |-- screenshot3.png
+    |-- ticket.png
+    |-- todo.png
     |-- Train_Ticket_invalid_pnr.png
     |-- Vande_Bharat_Payment.png
+    |-- view.png
 |-- screenshot.png
 |-- screenshots
     |-- 1778599866996.png
@@ -48,6 +54,21 @@
     |-- 1778602200134.png
     |-- 1778602264163.png
     |-- 1778636618516.png
+    |-- 1778664084705.png
+    |-- 1778664112664.png
+    |-- 1778664300960.png
+    |-- 1778665034660.png
+    |-- 1778665047666.png
+    |-- 1778665077798.png
+    |-- 1778665105950.png
+    |-- 1778665164296.png
+    |-- 1778665191283.png
+    |-- 1778665258993.png
+    |-- 1778665491073.png
+    |-- 1778665504150.png
+    |-- 1778665611227.png
+    |-- 1778666634880.png
+    |-- 1778666762566.png
 |-- scripts
 |-- setup
     |-- login.js
@@ -57,44 +78,67 @@
     |-- screenshots
         |-- 1778569895417-Submit-passenger-details.png
     |-- videos
+        |-- page@050e04bebeecb3adbea0069cad020c44.webm
         |-- page@066b4e7201d068449c1bff4a89a1deb3.webm
         |-- page@085e39598e5dd3181d077feb6a084dd8.webm
         |-- page@0974504bddeb37878bf666edd455aa20.webm
         |-- page@0994d7e1fb017d5cd636bc2c2ea73b21.webm
         |-- page@09af5f27d018e0c22ec4d4b66ce92c3c.webm
+        |-- page@0d82e24feae8d4ce3f12b152351038dd.webm
         |-- page@0ece58b763a070b40fb18e518106537a.webm
         |-- page@10c3862dbb9d4f1c0c65a8038ef2042b.webm
         |-- page@111eb0706c3696b2e7d6ca0f3b7709c0.webm
+        |-- page@11f9c86180aa78f6da3d8c874b8b4914.webm
         |-- page@12b475cf2144f34c0baf6fec2d5b15a1.webm
         |-- page@1387ff03c7212cf11bf6249a4810deb5.webm
+        |-- page@1492ff1d3b5098feae3be4fb419ed33c.webm
         |-- page@14d6cf4f2e8fc68c9370323336943d31.webm
+        |-- page@150a82b1ca891e66b7d5278e7e105a86.webm
         |-- page@156319188cba5ee0dfa2f20cfcd3dd31.webm
         |-- page@15e5fa7feccd9a6464e8297251984e95.webm
         |-- page@15f22c145731c0322afe15447d11ea9a.webm
         |-- page@193b052c7532cbfc27ca0d53fa43162e.webm
         |-- page@1cc005574ef94ea4163bb79f9f6e4288.webm
         |-- page@1e1f9f2baa0499ead2fd2e5c831994a5.webm
+        |-- page@1e5b764222ce5fa88ce2e2af237d72db.webm
+        |-- page@1f22388635fafb92f9540eebf5ebe5e8.webm
+        |-- page@1f5fa0e05108752213e94f4c52c6c961.webm
         |-- page@20f25212c2165ca19f62f3dd32094031.webm
         |-- page@2225ef3c6f27962cae8baca19c9e2d72.webm
         |-- page@23ba9a56f02e79da8fffdd613f5ddd90.webm
+        |-- page@2491bf39f37e39f9793703bd3f996999.webm
         |-- page@24ffc576679f8805e4ef5daa929aa66b.webm
         |-- page@26aa9d6a55fb7e3618e337e522187952.webm
+        |-- page@2b21ca3b98ea90892ac8fb45acca4f47.webm
+        |-- page@2b438e8c697152d67502ec13c3b08e12.webm
         |-- page@2b92e84f4feb2d5e3eaa0c3bec1cc0ff.webm
+        |-- page@2b94eec070399573697730ee0b35ce10.webm
         |-- page@2ba9835bfced6cc197385c05d5bfcd62.webm
+        |-- page@2d1d404d5dd9d9196ed7602c6b996f9c.webm
         |-- page@30ddbb198abd9b0ed1818b0ea52939e3.webm
         |-- page@323035f9098c50928fba11f4940f1b2a.webm
+        |-- page@32a83c4bc7f7849b75bb2a5cb84430ae.webm
         |-- page@33b110cc77f2580fe31be3d07ddf5b56.webm
+        |-- page@33ebcaa48340f7fe83752b03d72a7a2b.webm
+        |-- page@3428fb4fefd4c04a8d7eb2bf81eaa897.webm
         |-- page@3a35dbd8b903f0c2670104a87a0539dd.webm
+        |-- page@3a7a37c16c6f07f27e1eba2e676c8fa4.webm
+        |-- page@3d480fb964d23f555e4d9fa48470c998.webm
         |-- page@3d5c18508a7529c44399649170de6d30.webm
         |-- page@3dabc0e20988d27ad72e32e5178f8e9f.webm
         |-- page@3fab37ceb8d54fc3dd2141f7e6eba78d.webm
+        |-- page@3fde63335ab9b74d60b96e39006fc7cd.webm
+        |-- page@424a66b9c18c6ce7dc6efbf7ceb546bd.webm
         |-- page@445a81b82fc429e2526b014151ebd044.webm
+        |-- page@4486fce52797d298dc9f9d42602466f9.webm
         |-- page@460327bca1a2b3822c4eed9835daaa3c.webm
         |-- page@47cc877fd465569a58e6b321afe2dd0a.webm
         |-- page@4833b262311c94e98c826c85bf274c4e.webm
         |-- page@49286b89902c77e0517aea63f026b203.webm
+        |-- page@4a78f1e0eca9c6367439e1da53c66ab2.webm
         |-- page@4b4e3d26ed6887adfe40726738ac5a41.webm
         |-- page@4b7c9b1b9d02052826d6f16f95570ec0.webm
+        |-- page@4bdf48fa4fcf0f2df775a7dffe1c937c.webm
         |-- page@4cad76f881290a353fd1f2739f92150c.webm
         |-- page@4d6eaae74949bd57ea5bafae496608f9.webm
         |-- page@4e3b22c5be172905ff170c9ea00cad65.webm
@@ -102,26 +146,44 @@
         |-- page@4ee99a1d1975da83aab79d854556e949.webm
         |-- page@4f1fbf8d02db32a54cb35b306d00f4aa.webm
         |-- page@522a0489b5b90858b5731636897640ad.webm
+        |-- page@53ac8f6af639d00513b62645bb5012aa.webm
         |-- page@542a2e3a207d38944669c7b67989a9bb.webm
+        |-- page@546f65e4dc6985e92d15baf03ed3cb8f.webm
         |-- page@5480d5a5fbfe7666087985e0eeaf6490.webm
         |-- page@572d9b5d0078a0f666c445f56455577d.webm
         |-- page@57fab5b428ef1e949c229a0ea6fff878.webm
         |-- page@596c1df79a1ba7c8dec28d08c2c0a108.webm
+        |-- page@5a93ec916d662f966f21202dde42b6eb.webm
         |-- page@5b284f27575bc2b0e470d879942e2ced.webm
         |-- page@5b4682d1f9ba1fa24f27340c289f53c5.webm
         |-- page@5ecaae074705b7025c57c3144278035f.webm
+        |-- page@5f7f378cf3663a0a33201b32cca4c532.webm
+        |-- page@5fc3ef18fb26f233f3fc62ac8111c5cf.webm
         |-- page@615976e85d167d31416222cad9efa0f9.webm
+        |-- page@6170424f0bf60276a66bf94dfd32c404.webm
         |-- page@647261e49363a03855ed7619954db119.webm
         |-- page@65a161f10843b54e5fa5cd0f4e089da9.webm
+        |-- page@675ac708add1532a8bcad5417ef56580.webm
+        |-- page@67736077202c1672b9c29f6f469ad4ea.webm
         |-- page@68711c0bd3a32ea6b2c92a8ac0491006.webm
+        |-- page@6c122750997d91d0dac94f088980b1da.webm
+        |-- page@734608811e8c599588163ef823a51a37.webm
         |-- page@73c730622761a617d25f3158bfa0c4bf.webm
         |-- page@74536e5723a65acba1bdd1e063e9f93b.webm
+        |-- page@766feea207d6f46b15faec479df22cc5.webm
+        |-- page@7939fdfc56eeb0ebf1a42ee5b08a5d76.webm
+        |-- page@79a12e5aaaa62a16c48593bcde40adfc.webm
+        |-- page@79b32c6977ba79957d88afbb4ec3c017.webm
         |-- page@7a2bf141582808cfd537c99e6a911d9d.webm
+        |-- page@7a386071c847eb9517111313afe10835.webm
+        |-- page@7a87560b674d5526282b08872255404b.webm
         |-- page@7d23637631dba0b5f3bc0016d444dc57.webm
         |-- page@7d240eb56df6d54e4dfb17abc205186f.webm
+        |-- page@7e6d99ec5069c399c7269278945ca3fd.webm
         |-- page@7ea91c9dba31a5fa7f8a755865a391e9.webm
         |-- page@7f838fcf97a8c5837fe03b35536bef19.webm
         |-- page@84eb32140dc8ae6f2884199f76ff8bea.webm
+        |-- page@880e98591c2d6c43393ec2d1565f4872.webm
         |-- page@88a62a57560258585734041d74d5cd77.webm
         |-- page@8c0e30f5fb565595acb852bf39429a7d.webm
         |-- page@8cd2c6521741bf142653b69f4247717c.webm
@@ -130,6 +192,8 @@
         |-- page@8f29991351eb5205654b1513bfbfeb09.webm
         |-- page@8fde7efda7dc92a55d87b80e436f2f08.webm
         |-- page@9543589f7d5548d5438be5dde27b751f.webm
+        |-- page@95d674dbefa78cddb49f1194242120e2.webm
+        |-- page@96a159a15423b2268709ebf6bb842a2f.webm
         |-- page@96f1e0ff43326d4a1d246509c4f30a9c.webm
         |-- page@9807d66fd1f3c72d5086143da7f4a7d8.webm
         |-- page@987298d703ad88aceb04a19d6f3d83e4.webm
@@ -138,48 +202,69 @@
         |-- page@99defb8a72cc232f914e89b1956ab908.webm
         |-- page@9aaaaf01a66b83364c45cca4a823c677.webm
         |-- page@a0846d6f17a40f53ca280b1f4945ec78.webm
+        |-- page@a1d2218027c16d959530a2d1b81d8c58.webm
         |-- page@a21f678c81e2092603cf9c552a60945d.webm
         |-- page@a49ceb7085010f2404c0c171ca94f5c3.webm
+        |-- page@a8afcf6cb7467e736ef83c49795dbfad.webm
         |-- page@a9160e253e7c05e39ad37e515b9e76cf.webm
         |-- page@a96e559471348b55dbf65236dfcef6ac.webm
         |-- page@aa47f60503d815d4b6f0256fe6d0a0dc.webm
+        |-- page@ab4b8b47d7c4c20f72b1c22d538b4991.webm
         |-- page@abf648f96c75f1965f3c7592762cc0a1.webm
         |-- page@ad80d820c5e6ef844f6e3a7ece700bff.webm
         |-- page@ae4e417fa8a89ba1ebf50a5b0d231e5e.webm
+        |-- page@aed15534f96883a1b299b5e5baf21f92.webm
+        |-- page@b035c7d4e40d03f926c6b814fe9cde41.webm
         |-- page@b0a5775344e420391437f7879c316882.webm
+        |-- page@b368b367ea3935445bfa0bf9842fba2e.webm
         |-- page@b89f20cd270a81bf685bc9811f2c480d.webm
         |-- page@bb746ac52161198bf731c558bb74a389.webm
         |-- page@bbdccb82de02f4cf5fb3dee79139462a.webm
+        |-- page@be4cec024f46996cf4df70587b12af8c.webm
         |-- page@bf41e56263a65e80511e0ccce5c6d559.webm
         |-- page@c1fa501d6607726abd597fddf4e92831.webm
+        |-- page@c37e744d031f4d2b264716ff462fdbcf.webm
         |-- page@c448833f7e973052dc20ef8d5978a384.webm
+        |-- page@c4bab52bf28558a8f93a9191be2e461f.webm
         |-- page@c51ab18cdc1aeca47a3a5f06f4f46e38.webm
         |-- page@c8deacc1bb5b60d9591278b262a74ddb.webm
         |-- page@ca50b02fb788705b36f8be1fd8a3afea.webm
         |-- page@cba4e203832f81674efba3faa2f62688.webm
+        |-- page@ce90ff659eed8159813b3078229937e7.webm
         |-- page@cecb951033123ab24babfacb34fd566a.webm
         |-- page@cf3ffbf9201c9a76235572f3a1d41dc3.webm
         |-- page@d0368b949a34fef432f324f183a8c736.webm
+        |-- page@d0c315dff70744eefb2f704af09cb012.webm
         |-- page@d406ec6fcfdcd21594139b41bb48af48.webm
         |-- page@d447f2a808adf351a1459b752dbd8b92.webm
         |-- page@db1a7d8db98c82274f4b367d9ee5cdcb.webm
+        |-- page@dbd9b35899d83f942e98efd057cc4b28.webm
         |-- page@dc20a64d42bab57a74bae2bb96fb31a2.webm
+        |-- page@dc3231f2517a180022e981d3a4d1d052.webm
         |-- page@dd3338f2f3eb7b877bf8ddb62ca28e40.webm
         |-- page@dd5f9121f0b8d0bdeaa801b122a3c912.webm
         |-- page@de58758c110bb9abcfd7226c0375ab23.webm
         |-- page@e0f6304cfef4bca7c145e961ef86c640.webm
+        |-- page@e129550219b3bf4c7a290b3be93cfb9f.webm
         |-- page@e4b1b8bac9fb092701a9b8bcbeac3a03.webm
+        |-- page@e6d508c67c03ff234654067d82782003.webm
         |-- page@e6fe97d320b56071bb84476f35ce74c2.webm
         |-- page@e8a22ef5c20b5dcd35bacd2108747665.webm
+        |-- page@ea3d355d22042cd62ba874d881cda779.webm
         |-- page@ea93d08523b04d4466f035f2f15713e6.webm
+        |-- page@ea9a75da61e46a1e637df6cdbbdecca2.webm
         |-- page@eae1b01d9ee1f0b55a8ca3c599f0e74c.webm
         |-- page@eb34498f40eaaa23eb63aac40aff5bac.webm
         |-- page@ec20db4ea0799a5dbdb016a231017a8b.webm
+        |-- page@edec1fe8b6b9032050dd826b06039c33.webm
         |-- page@ee5d94046a6ed3c5947eea68a6f25b0f.webm
+        |-- page@ef2d1d2aef3c2788ff0ade9624b697d3.webm
         |-- page@f00fe58dee34a02ee433eadf50f76d28.webm
         |-- page@f03839381c209107fdaaf2907733b82e.webm
+        |-- page@f0c0cb7f65f9ebb03f2050514b8c76be.webm
         |-- page@f0e70b0ccfa79b2d109322ae37419b71.webm
         |-- page@f139abcaab603bbd1c109f819425eeb2.webm
+        |-- page@f1749cc3d9be6a4ee5659f0f93fd9ed5.webm
         |-- page@f1bbe6e5ee6ccf03689936623bc062c5.webm
         |-- page@f39052ac21f14d61d37e4e05a9bb418b.webm
         |-- page@f3a51511e79175c4eac1f5f19ab9d620.webm
@@ -189,6 +274,7 @@
         |-- page@f6183dc61053a7e3b880d50384bb2eed.webm
         |-- page@f791a588b2ad2a52aeacfc08833f4d5e.webm
         |-- page@f8a80b2790498653e9eb63691c65b27d.webm
+        |-- page@f93ba3b446bafa6ba59976da1466a076.webm
         |-- page@fa695ce6f0ab4797b706d1328f0c2914.webm
         |-- page@fbefaeba3ca34b9b18db4234f231c019.webm
         |-- page@fbfe4c93e553b836334a2eec610b6f80.webm
@@ -208,6 +294,9 @@
             |-- HotelBooking.feature
             |-- hotel_wishlist.feature
         |-- train
+            |-- book.feature
+            |-- metro.feature
+            |-- pnr.feature
             |-- search_by_station.feature
             |-- train_food_order.feature
             |-- train_platform_locator_to_booking.feature
@@ -242,6 +331,9 @@
             |-- OffersPage.js
             |-- ProfilePage.js
         |-- train
+            |-- bookpage.js
+            |-- metropage.js
+            |-- pnrpage.js
             |-- search_by_station_page.js
             |-- train_food_order_page.js
             |-- train_platform_locator_page.js
@@ -265,6 +357,9 @@
         |-- login
             |-- login.js
         |-- train
+            |-- book.js
+            |-- metro.js
+            |-- pnr.js
             |-- search_by_station.js
             |-- train_food_order.js
             |-- train_platform_locator.js
