@@ -3,14 +3,14 @@
 # Including search, filtering, sorting, booking, and payment navigation
 
 Feature: Hotel Booking and Validation
+  
 
-  As a registered user of Ixigo
-  I want to be able to search for hotels and book a room
-  So that I can successfully complete my hotel reservation
-
-  Background:
-    # Setup: Ensure user is logged in and on home page
-    Given the user is logged into Ixigo and is on the Home Page
+  # As a registered user of Ixigo
+  # I want to be able to search for hotels and book a room
+  # So that I can successfully complete my hotel reservation
+  # Setup: Ensure user is logged in and on home page
+  Background: Login
+  Given User should be logged in
 
   # Positive scenario: Complete successful hotel booking flow
   Scenario: Verify successful hotel booking flow for a registered user

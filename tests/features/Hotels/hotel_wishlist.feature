@@ -3,6 +3,8 @@
 # Verifies users can save hotels to wishlist and validate offer codes
 
 Feature: Hotel Wishlist Functionality
+Background: Login
+Given User should be logged in
   
   # Scenario 1: Wishlist functionality
   @Scenario1
