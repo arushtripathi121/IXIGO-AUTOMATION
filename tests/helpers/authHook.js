@@ -38,6 +38,7 @@ After(async function ({ result }) {
   let videoPath;
   let screenshotPath;
 
+
   if (this.page) {
     const video = this.page.video();
     if (video) {
@@ -56,7 +57,6 @@ After(async function ({ result }) {
       fullPage: true,
     });
     
-    // Attach screenshot to Cucumber report
     const screenshotData = fs.readFileSync(screenshotPath);
     await this.attach(screenshotData, "image/png");
   }
