@@ -22,6 +22,7 @@
 |-- pdfReport
     |-- pdfReport.js
 |-- playwright.config.js
+|-- README.md
 |-- report.js
 |-- screenshot
     |-- metro.png
