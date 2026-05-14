@@ -1,7 +1,8 @@
 [
   {
-    "origin": "BLR",
-    "destination": "HYD",
+    "originCode" : "DEL",
+    "origin": "Delhi",
+    "destination": "BOM",
     "firstName": "Naman",
     "age" : 25 ,
     "date": "May 17, 2026",
@@ -14,8 +15,8 @@
   },
 
   {
-    "origin": "BLR",
-    "destination": "HYD",
+    "origin": "DEL",
+    "destination": "BOM",
     "firstName": "Rahul",
     "date": "May 17, 2026",
     "lastName": "K",
@@ -26,7 +27,7 @@
   },
   {
     "origin": "DEL",
-    "destination": "HYD",
+    "destination": "BOM",
     "firstName": "Narendra",
     "date": "May 17, 2026",
     "lastName": "Modi",
@@ -35,5 +36,29 @@
     "address": "Bangalore",
     "typeOfFlight" : "Business",
     "Senior Citizen" : "True"
+  },
+  {
+    "destination": "HYD",
+    "firstName": "Narendra",
+    "date": "May 17, 2026",
+    "lastName": "Modi",
+    "email": "rahul@gmail.com",
+    "dob": "12/05/1940",
+    "address": "Bangalore",
+    "typeOfFlight" : "Business",
+    "Senior Citizen" : "True",
+    "isNegative": true
+  },
+  {
+    "originCode": "HYD",
+    "firstName": "Narendra",
+    "date": "May 17, 2026",
+    "lastName": "Modi",
+    "email": "rahul@gmail.com",
+    "dob": "12/05/1940",
+    "address": "Bangalore",
+    "typeOfFlight" : "Business",
+    "Senior Citizen" : "True",
+    "isNegative": true
   }
 ]

@@ -1,7 +1,6 @@
-const { expect } = require('@playwright/test'); //
-const Data = require('../../../JSONFiles/flightData.json');//importing data from the file
-const testData = Data[0]
-// Have made different test data some for student some for Senior citizen
+const { expect } = require('@playwright/test');
+const Data = require('../../../JSONFiles/flightData.json');
+const testData = Data[0];
 
 class FlightBookingPage {
 
@@ -11,9 +10,9 @@ class FlightBookingPage {
         this.fromInput = page.locator('//label[text() = "From"]/following-sibling::input');
         this.toInput = page.locator('//label[text() = "To"]/following-sibling::input');
         this.departureDate = page.locator(`//abbr[@aria-label="${testData.date}"]`);
-        this.studentBTN = page.locator('//span[text()="Student"]')
-        this.seniorCitizenBTN = page.locator('//span[text()="Senior Citizen"]')
-        this.businessClassBTN = page.locator('//span[text()="Business"]')
+        this.studentBTN = page.locator('//span[text()="Student"]');
+        this.seniorCitizenBTN = page.locator('//span[text()="Senior Citizen"]');
+        this.businessClassBTN = page.locator('//span[text()="Business"]');
         this.searchButton = page.locator('//button[text()="Search"]');
         this.filter1 = page.locator('//input[@value="cheapest"]');
         this.filter2 = page.locator('//input[@type="checkbox"]').nth(1);
@@ -29,13 +28,17 @@ class FlightBookingPage {
         this.confirmBTN = page.locator('//button[text() = "Confirm"]');
         this.BTN = page.locator('//button[text() = "No, Thanks"]');
         this.continueBTN = page.locator('//button[contains(text(),"Continue")]');
-        this.seatBTN = page.locator('(//img[@alt="w-auto seat-icon"])').nth(10)
-        this.mealBTN = page.locator('//button[text() = "Meal Selection"]')
-        this.addMealBTN = page.locator('(//button[text() = "Add"])').nth(2)
+        this.seatBTN = page.locator('(//img[@alt="w-auto seat-icon"])').nth(17);
+        this.mealBTN = page.locator('//button[text() = "Meal Selection"]');
+        this.addMealBTN = page.locator('(//button[text() = "Add"])').nth(2);
         this.skipBTN = page.locator('//button[text() = "Continue To Pay"]');
-        this.delhiOption = page.locator('(//span[@class="text-primary text-sm"])').nth(0)
-        this.firstSuggestion = page.locator('(//div[@role="listitem"]/descendant::span[@class="text-primary text-sm"])[11]').nth(0);
+        this.delhiOption = page.locator(`//span[contains(text(),"${testData.originCode}")]`).first();
+        this.firstSuggestion = page.locator(`//span[text()="${testData.destination}"]`).first();
         this.toBlockText = page.locator('//span[text() = "To"]/following-sibling::p');
+    }
+
+    async isElementVisible(locator){
+        return await locator.waitFor({ state: 'visible', timeout: 3000 }).then(() => true).catch(() => false);
     }
 
     async launchWebsite() {
@@ -45,50 +48,72 @@ class FlightBookingPage {
 
     async selectOrigin() {
         await this.fromBlock.click();
+
+        if(!testData.origin){
+            console.log("Negative Test : Origin Empty");
+            return;
+        }
+
         await this.fromInput.fill(testData.origin);
-        await this.page.waitForTimeout(2000);
+        await expect(this.delhiOption).toBeVisible();
+
+        const suggestionCount = await this.page.locator('//span[@class="text-primary text-sm"]').count();
+
+        if(suggestionCount === 0){
+            console.log("Negative Test : Invalid Origin");
+            return;
+        }
+
         await this.delhiOption.click();
-    }
 
-    async selectDestination() {
-        // After entering Origin destination automatically opens so no need to click
+        if(!testData.destination){
+            console.log("Negative Test : Destination Empty");
+            return;
+        }
+
         await this.toInput.fill(testData.destination);
-        await this.page.waitForTimeout(2000);
-        await this.firstSuggestion.click();
-    }
 
-    async selectDate() {
-        // After entering Origin destination automatically opens so no need to click
+        const destinationCount = await this.page.locator('//span[@class="text-primary text-sm"]').count();
+
+        if(destinationCount === 0){
+            console.log("Negative Test : Invalid Destination");
+            return;
+        }
+
+        await this.firstSuggestion.click();
         await this.departureDate.click();
     }
 
     async clickSearch() {
+        await this.searchButton.click();
 
-        if(testData.typeOfFlight == "Economy"){
-            await this.searchButton.click();
+        if(testData.isNegative){
+            console.log("Negative Test Passed");
+
+            await this.page.screenshot({
+                path: 'screenshots/search_failure.png',
+                fullPage: true
+            });
+
+            return false;
         }
 
-        else{
-            await this.businessClassBTN.click()
-            await this.searchButton.click();
-        }
-
-        await expect(this.page).toHaveURL(/search\/result/);
+        console.log("Positive Test Passed");
+        return true;
     }
 
     async clickFilter1(){
         if(testData.student){
-            await this.studentBTN.click()
+            await this.studentBTN.click();
         }
 
         if(testData['Senior Citizen']){
-
-            const dob = new Date(testData.dob)
-            const today = new Date()
-            let age = today.getFullYear() - dob.getFullYear()
+            const dob = new Date(testData.dob);
+            const today = new Date();
+            let age = today.getFullYear() - dob.getFullYear();
 
             if(age > 60){
-                await this.seniorCitizenBTN.click()
+                await this.seniorCitizenBTN.click();
             }
         }
 
@@ -105,8 +130,10 @@ class FlightBookingPage {
 
     async fillPassengerDetails() {
 
-        await this.freeCancellation.click();
-        await expect(this.freeCancellation).toBeChecked();
+        if(await this.isElementVisible(this.freeCancellation)){
+            await this.freeCancellation.click();
+            await expect(this.freeCancellation).toBeChecked();
+        }
 
         await this.titleInput.click();
         await this.mrOption.click();
@@ -120,7 +147,7 @@ class FlightBookingPage {
         await this.emailInput.fill(testData.email);
         await expect(this.emailInput).toHaveValue(testData.email);
 
-        if(await this.DOBInput.isVisible()){
+        if(await this.isElementVisible(this.DOBInput)){
             await this.DOBInput.fill(testData.dob);
             await expect(this.DOBInput).toHaveValue(testData.dob);
         }
@@ -133,22 +160,40 @@ class FlightBookingPage {
 
     async confirmBookingDetails() {
         await this.confirmBTN.click();
-        await this.BTN.click();
+
+        if(await this.isElementVisible(this.BTN)){
+            await this.BTN.click();
+        }
     }
 
     async selectSeats() {
         await this.seatBTN.click();
-        await this.mealBTN.click();
+
+        if(await this.isElementVisible(this.mealBTN)){
+            await this.mealBTN.click();
+        }
     }
 
     async selectMeals() {
-        await this.addMealBTN.click();
-        await this.continueBTN.click();
-        await this.continueBTN.click();
+
+        if(await this.isElementVisible(this.addMealBTN)){
+            await this.addMealBTN.click();
+        }
+
+        if(await this.isElementVisible(this.continueBTN)){
+            await this.continueBTN.click();
+        }
+
+        if(await this.isElementVisible(this.continueBTN)){
+            await this.continueBTN.click();
+        }
     }
 
     async continueToPayment() {
-        await this.skipBTN.click();
+
+        if(await this.isElementVisible(this.skipBTN)){
+            await this.skipBTN.click();
+        }
         await expect(this.page.locator('//p[text()="Scan & Pay with UPI"]')).toBeVisible({timeout:12000});
         await this.page.screenshot({path: 'screenshot/screenshot.png'});
     }

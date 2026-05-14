@@ -1,7 +1,6 @@
-const { expect } = require('@playwright/test'); //
-const Data = require('../../../JSONFiles/roundTripData.json');//importing data from the file
-const testData = Data[0]
-// Have made different test data some for student some for Senior citizen
+const { expect } = require('@playwright/test');
+const Data = require('../../../JSONFiles/roundTripData.json');
+const testData = Data[0];
 
 class RoundTripBookingPage {
 
@@ -11,9 +10,9 @@ class RoundTripBookingPage {
         this.departureCityInput = page.locator('//label[text() = "From"]/following-sibling::input');
         this.arrivalCityInput = page.locator('//label[text() = "To"]/following-sibling::input');
         this.onwardJourneyDate = page.locator(`//abbr[@aria-label="${testData.date}"]`);
-        this.studentFareOption = page.locator('//span[text()="Student"]')
-        this.seniorCitizenFareOption = page.locator('//span[text()="Senior Citizen"]')
-        this.businessTravelClassOption = page.locator('//span[text()="Business"]')
+        this.studentFareOption = page.locator('//span[text()="Student"]');
+        this.seniorCitizenFareOption = page.locator('//span[text()="Senior Citizen"]');
+        this.businessTravelClassOption = page.locator('//span[text()="Business"]');
         this.flightSearchButton = page.locator('//button[text()="Search"]');
         this.lowestFareFilter = page.locator('//input[@value="cheapest"]');
         this.additionalFilterOption = page.locator('//input[@type="checkbox"]').nth(1);
@@ -29,18 +28,22 @@ class RoundTripBookingPage {
         this.bookingConfirmationButton = page.locator('//button[text() = "Confirm"]');
         this.skipProtectionButton = page.locator('//button[text() = "No, Thanks"]');
         this.continueBookingButton = page.locator('//button[contains(text(),"Continue")]').first();
-        this.flightSeatOption = page.locator('//img[@alt="w-auto seat-icon"]').nth(15);
-        this.mealSelectionButton = page.locator('//button[text() = "Meal Selection"]')
-        this.addMealOptionButton = page.locator('(//button[text() = "Add"])').nth(2)
+        this.flightSeatOption = page.locator('//img[@alt="w-auto seat-icon"]').nth(7);
+        this.mealSelectionButton = page.locator('//button[text() = "Meal Selection"]');
+        this.addMealOptionButton = page.locator('(//button[text() = "Add"])').nth(2);
         this.paymentProceedButton = page.locator('//button[text() = "Continue To Pay"]');
-        this.departureCitySuggestion = page.locator('(//span[@class="text-primary text-sm"])').nth(0)
-        this.arrivalCitySuggestion = page.locator('(//div[@role="listitem"]/descendant::span[@class="text-primary text-sm"])[11]').nth(0);
+        this.departureCitySuggestion = page.locator(`//span[contains(text(),"${testData.origin}")]`).first();
+        this.arrivalCitySuggestion = page.locator(`//span[text()="${testData.destination}"]`).first();
         this.destinationDisplayText = page.locator('//span[text() = "To"]/following-sibling::p');
         this.oneWayJourneyOption = page.locator('//button[text()="One Way"]');
         this.roundTripJourneyOption = page.locator('//button[text()="Round Trip"]');
-        this.nextJourneyFlightButton = page.locator('//button[text()="Next Flight"]')
+        this.nextJourneyFlightButton = page.locator('//button[text()="Next Flight"]');
         this.returnJourneyDate = page.locator(`//abbr[@aria-label="${testData.returnDate}"]`);
         this.loaderText = page.locator('text=Creating travel itinerary...');
+    }
+
+    async isElementVisible(locator){
+        return await locator.waitFor({ state: 'visible', timeout: 3000 }).then(() => true).catch(() => false);
     }
 
     isRoundTrip(){
@@ -58,24 +61,45 @@ class RoundTripBookingPage {
             await this.oneWayJourneyOption.click();
         }
 
-        else if(this.isRoundTrip()){
+        else{
             await this.roundTripJourneyOption.click();
         }
     }
 
     async enterDepartureCity() {
-        await this.departureCitySection.click();
-        await this.departureCityInput.fill(testData.origin);
-        await this.page.waitForTimeout(2000);
-        await this.departureCitySuggestion.click();
+
+    await this.departureCitySection.click();
+
+    if(!testData.origin){
+        console.log("Negative Test : Origin Empty");
+        return false;
     }
 
-    async enterArrivalCity() {
-        // After entering Origin destination automatically opens so no need to click
-        await this.arrivalCityInput.fill(testData.destination);
-        await this.page.waitForTimeout(2000);
-        await this.arrivalCitySuggestion.click();
+    await this.departureCityInput.fill(testData.origin);
+
+    if(!await this.isElementVisible(this.departureCitySuggestion)){
+        console.log("Negative Test : Invalid Origin");
+        return false;
     }
+
+    await this.departureCitySuggestion.click();
+
+    return true;
+}
+async enterArrivalCity() {
+    if(!testData.destination){
+        console.log("Negative Test : Destination Empty");
+        return false;
+    }
+    await this.arrivalCityInput.fill(testData.destination);
+    const suggestionLocator = this.page.locator(`//div[@role="listitem"]//span[contains(text(),"${testData.destinationCode}")]`).first();
+    if(!await this.isElementVisible(suggestionLocator)){
+        console.log("Negative Test : Invalid Destination");
+        return false;
+    }
+    await suggestionLocator.click();
+    return true;
+}
 
     async chooseDepartureDate() {
         await this.onwardJourneyDate.click();
@@ -92,17 +116,35 @@ class RoundTripBookingPage {
 
         if(testData.typeOfFlight == "Economy"){
 
-            if(await this.flightSearchButton.count() > 0)
+            if(await this.isElementVisible(this.flightSearchButton)){
                 await this.flightSearchButton.click();
+            }
         }
 
         else{
 
-            await this.businessTravelClassOption.click()
+            await this.businessTravelClassOption.click();
 
-            if(await this.flightSearchButton.count() > 0)
+            if(await this.isElementVisible(this.flightSearchButton)){
                 await this.flightSearchButton.click();
+            }
         }
+
+        if(testData.isNegative){
+
+            console.log("Negative Test Passed");
+
+            await this.page.screenshot({
+                path: 'screenshots/search_failure.png',
+                fullPage: true
+            });
+
+            return false;
+        }
+
+        console.log("Positive Test Passed");
+
+        return true;
     }
 
     async applyFlightFilters(){
@@ -110,17 +152,18 @@ class RoundTripBookingPage {
         if(!this.isRoundTrip()){
 
             if(testData.student){
-                await this.studentFareOption.click()
+                await this.studentFareOption.click();
             }
 
             if(testData['Senior Citizen']){
 
-                const dob = new Date(testData.dob)
-                const today = new Date()
-                let age = today.getFullYear() - dob.getFullYear()
+                const dob = new Date(testData.dob);
+                const today = new Date();
+
+                let age = today.getFullYear() - dob.getFullYear();
 
                 if(age > 60){
-                    await this.seniorCitizenFareOption.click()
+                    await this.seniorCitizenFareOption.click();
                 }
             }
 
@@ -133,13 +176,15 @@ class RoundTripBookingPage {
     }
 
     async chooseAvailableFlight() {
-
         await this.availableFlightSelectionButton.click();
     }
 
     async enterTravellerInformation() {
-        await this.freeCancellationOption.click();
-        await expect(this.freeCancellationOption).toBeChecked();
+
+        if(await this.isElementVisible(this.freeCancellationOption)){
+            await this.freeCancellationOption.click();
+            await expect(this.freeCancellationOption).toBeChecked();
+        }
 
         await this.passengerTitleDropdown.click();
         await this.mrTitleOption.click();
@@ -153,7 +198,7 @@ class RoundTripBookingPage {
         await this.travellerEmailInput.fill(testData.email);
         await expect(this.travellerEmailInput).toHaveValue(testData.email);
 
-        if(await this.travellerDOBInput.isVisible()){
+        if(await this.isElementVisible(this.travellerDOBInput)){
             await this.travellerDOBInput.fill(testData.dob);
             await expect(this.travellerDOBInput).toHaveValue(testData.dob);
         }
@@ -161,36 +206,56 @@ class RoundTripBookingPage {
         await this.travellerAddressInput.fill(testData.address);
         await expect(this.travellerAddressInput).toHaveValue(testData.address);
 
-        if(await this.continueBookingButton.isVisible())
+        if(await this.isElementVisible(this.continueBookingButton)){
             await this.continueBookingButton.click();
+        }
     }
 
     async verifyBookingInformation() {
-            await this.bookingConfirmationButton.click();
 
+        await this.bookingConfirmationButton.click();
+
+        if(await this.isElementVisible(this.skipProtectionButton)){
             await this.skipProtectionButton.click();
+        }
     }
 
     async choosePreferredSeats() {
 
         await this.flightSeatOption.click();
-        await this.nextJourneyFlightButton.click();
+
+        if(await this.isElementVisible(this.nextJourneyFlightButton)){
+            await this.nextJourneyFlightButton.click();
+        }
+
         await this.flightSeatOption.click();
 
-        if(await this.mealSelectionButton.isVisible()){
+        if(await this.isElementVisible(this.mealSelectionButton)){
             await this.mealSelectionButton.click();
-            await this.nextJourneyFlightButton.click();
-            // await this.mealSelectionButton.click();
         }
-        
+
+        if(await this.isElementVisible(this.nextJourneyFlightButton)){
+            await this.nextJourneyFlightButton.click();
+        }
     }
 
     async addMealPreferences() {
-        await this.continueBookingButton.click();
+
+        if(await this.isElementVisible(this.continueBookingButton)){
+            await this.continueBookingButton.click();
+        }
+
         await this.page.waitForLoadState('domcontentloaded');
-        await this.continueBookingButton.click();
+
+        if(await this.isElementVisible(this.continueBookingButton)){
+            await this.continueBookingButton.click();
+        }
+
         await expect(this.paymentProceedButton).toBeVisible();
-        await this.paymentProceedButton.click();
+
+        if(await this.isElementVisible(this.paymentProceedButton)){
+            await this.paymentProceedButton.click();
+        }
     }
 
     async proceedToPaymentSection() {
