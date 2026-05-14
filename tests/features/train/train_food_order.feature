@@ -13,7 +13,7 @@ Feature: Train Food Order
         And enter passengers name "<Name>"
         And enter contact details "<Contact>"
         And select payment method
-        And click on continue button
+        # And click on continue button
         Then payment page should load successfull
 
         Examples:

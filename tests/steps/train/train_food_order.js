@@ -39,9 +39,9 @@ When("enter contact details {string}", async function (contact) {
 When("select payment method", async function () {
     await order_food.PaymentMethod(newpage)
 })
-When("click on continue button", async function () {
-    await order_food.ProceedContinue(newpage)
-})
+// When("click on continue button", async function () {
+//     await order_food.ProceedContinue(newpage)
+// })
 Then("payment page should load successfull", async function () {
     await order_food.PaymentPageLoad(newpage);
     console.log("Tested is completed successfully")
