@@ -7,9 +7,7 @@ Given User should be logged in
 Scenario: Search and book a flight
 
 Given user launches ixigo website 
-When user selects "DEL" as origin city 
-And user selects "MUM" as destination city 
-And user selects departure date 
+When user adds search data
 And user clicks search button 
 And user applies filters 
 And user books first available flight 
