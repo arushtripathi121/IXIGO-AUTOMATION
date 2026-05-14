@@ -24,6 +24,8 @@ When("I search buses from {string} to {string}", async function(source, destinat
     await this.busSearch.setSource(source);
     await this.busSearch.setDestination(destination);
     this.page = await this.busSearch.search();
+    await this.page.waitForTimeout(2000);
+    await this.page.reload();
 });
 
 When("I apply bus filters", async function() {

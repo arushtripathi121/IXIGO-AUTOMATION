@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cucumber-js tests/features",
-    "setup": "node setup/login.js"
+    "setup": "node setup/login.js",
+    "bus": "npx cucumber-js tests/features/busBooking --format json:test-results/bus-report.json",
+    "flights": "npx cucumber-js tests/features/Flights --format json:test-results/flights-report.json",
+    "hotels": "npx cucumber-js tests/features/Hotels --format json:test-results/hotels-report.json",
+    "train": "npx cucumber-js tests/features/train --format json:test-results/train-report.json",
+    "visa": "npx cucumber-js tests/features/visaBooking --format json:test-results/visa-report.json",
+    "html-report": "node report.js",
+    "pdf-report": "node pdfReport/pdfReport.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +21,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^12.8.2",
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "multiple-cucumber-html-reporter": "^3.10.0"
   },
   "dependencies": {
     "dotenv": "^17.4.2"
