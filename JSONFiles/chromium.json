@@ -2,130 +2,130 @@
   "cookies": [
     {
       "name": "_GRECAPTCHA",
-      "value": "09AKhCRwgAVvXJwDYYra0s1ohc_KEr_zJsn88vqFSnXlBi40ojBl-6nNxWxp4SWgnJdtxXHwFtOzzy96zAqs8yj0s",
+      "value": "09AKhCRwgHTvPSjChXIkZB1c6lUzWcyJvCBo3BFsGWW_KLp8-qUQ93xPjmwEgoGCfnlu5wM6wEUnSAejvnESqttuU",
       "domain": "www.google.com",
       "path": "/recaptcha",
-      "expires": 1794208403.09198,
+      "expires": 1794220205.561323,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "__cf_bm",
-      "value": "Pib0H0pjFbT3usXNxy6.8tz8pViGKKZZRdL5VEs8peE-1778656375.158607-1.0.1.1-9cdOcbQZWUEUeA6w7eUyqXKmanQHqDvPcW2H4QpUEVPZAwCRijyxHdbMHXc4ifwT.hhacBUni2gGK1sMZKECe3pPWsjMoyKdJdqSk7Tuk2rAuUl1UbdvVcBunqJC5utd",
+      "value": "sXmQOnixuaH2iOnGQirf7r_po2GYDMI6Z.Yvw8uUmso-1778668180.4455957-1.0.1.1-SKAZGLbLGHJM_DBqfiTt2SZMgzvKw5SVS0zkRDl_zAcb5kjPZ27aKMu72I79vsOZo8sMpLwNDDmUCI5v7tnxiAs6XyWFD6FxAOri5DuBFfWqF1_QzHLhDeQCHIBDsEkP",
       "domain": ".ixigo.com",
       "path": "/",
-      "expires": 1778658175.204779,
+      "expires": 1778669978.696274,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "session_id",
-      "value": "8zgmhvzmhu",
+      "value": "x7xz9bpcjqs",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1813216406.912084,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "WZRK_G",
-      "value": "e5b87d0ec45d4277a5d019b9a8e195de",
-      "domain": ".ixigo.com",
-      "path": "/",
-      "expires": 1810192404,
+      "expires": 1813228209.178035,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "ixiUsrLocale",
-      "value": "\"urgn=Uttar Pradesh:ucnc=IN:ucty=Saharanpur:cnc=IN:cc=INR:lng=en\"",
+      "value": "\"urgn=Delhi:ucnc=IN:ucty=Delhi:cnc=IN:cc=INR:lng=en\"",
       "domain": "edge-dyn.ixigo.com",
       "path": "/",
-      "expires": 1778670777.397537,
+      "expires": 1778682579.106465,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "ixiUID",
-      "value": "1d8f91e2310c47b388ec",
+      "value": "18f2a03e1cad43a9b533",
       "domain": ".ixigo.com",
       "path": "/",
-      "expires": 1813216377.397627,
+      "expires": 1813228179.106482,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "ixiSrc",
-      "value": "VCzytDFk09hjTrWt+lvkvWJsKmtcpky9Sv4Qt8t/3oWRlSGAKfbLBjr6stEP6bEgMrXFlQHNKL0rwoZ9Trr2kA==",
+      "value": "gUjyJke7iJnnwz2lYvPtqBGK9iCJLxk2Sv4Qt8t/3oWRlSGAKfbLBjr6stEP6bEgMrXFlQHNKL0rwoZ9Trr2kA==",
       "domain": ".ixigo.com",
       "path": "/",
-      "expires": 1813216377.397715,
+      "expires": 1813228179.106517,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "ixigoSrc",
-      "value": "1d8f91e2310c47b388ec|DIR:13052026|DIR:13052026|DIR:13052026",
+      "value": "18f2a03e1cad43a9b533|DIR:13052026|DIR:13052026|DIR:13052026",
       "domain": ".ixigo.com",
       "path": "/",
-      "expires": 1813216377.397793,
+      "expires": 1813228179.106535,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
+      "name": "WZRK_G",
+      "value": "9f01a148cc8b4335ab32dbe00dd42428",
+      "domain": ".ixigo.com",
+      "path": "/",
+      "expires": 1810204209,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
       "name": "OTPlessInId",
-      "value": "EDCCE86A-8322A013-4000-8-177AED22-0000708BAF4B-019E202E9B1D",
+      "value": "C7671CFD-86888AFF-4000-8-7BBAE595-0000F5016511-019E20E2971B",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1810192385.821196,
+      "expires": 1810204181.275268,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "state",
-      "value": "106776a2-6e7b-4c00-87d8-276af357225d",
+      "value": "9d41f0cd-07c7-4179-8c3f-b6da46af9b1d",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1810192386.207851,
+      "expires": 1810204181.526663,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "uid",
-      "value": "999CF8E728484C5993F03172AAEA8738",
+      "value": "5ABD94CB6DB946DD82954F2CC5580A9D",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1810192401.67824,
+      "expires": 1810204204.944847,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "sapphire",
-      "value": "BVbC5oIndEkQpzZIbTytIPTUqH7BKu0suJ/JFN2dJlynp8Y+o+KlHBQXAmUiJO3gHX2HFIN2e3XXR0NQnhq+rihlrHfRIqpW+4f5HmURNvZz5zPJzdX0YNOTqwprzaatvcwMJUMVmW3xBDDfhygJumyTM9uokzQgY8BXO+zENkn/l3a/tJ8xNDBzUXsVUkclWdjLOnFApWwCtwn60dSxKSrkOObLjyaahB/KuDghkBhkqYPwtrJMzUTrqAalbPfP5w8+CCqW8+g=",
+      "value": "OAlSwOWAHOEzfgOGLxwdut7FYSCQROMP/XGwbntIIIDmZdiDR2/ouO1jwPJHOHxX2M6d70ETnIessky3VrL6tM7V98XNsPsVPnqdnacRjQKvwYaI5UAlnQ+R8jMshwtDLh4l6b0gMuCE5gPppBtUDC4bhcJcQd2YCoy583ygL0ltli8D6m8stTNpm1u6Mb1gjREIsZ9a07KUMn/bq+lAfM1yr92Ojqvz9c/L4crcYfQ+/nWdZtuQCd2BytRjsjGLtxGiKJgTLBM=",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1794208403.511809,
+      "expires": 1794220205.752029,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "at",
-      "value": "o4rfoid0lmglfe4nbd4y52gm8gpq83y6yt917ft7i47to11f8a3ruh86b2wf0fuc1dq2vj2ettltnlpu8vckmj3fmupyho0bf9o9l8870NmEwMjc3MjgxNzA0OGQ3MTZkMDg3ZTFlwh04j43tbwke9y46lqqoirndtlosr8xq2b7tmi15f5dvfva7t5mwkwnoi8",
+      "value": "sxe3l7senno29hdnmbtygl2479dunxbwy7qwqfy5rt5ryvcejvp3te8ry18lhx6vqn6lyen1rdid5f2wn8n7bnb7vkolpfm6419pq2swldohfcdadq23qjys7jrtl5NjlmYjE1NmRkZTIwYzg3OWFiOWQ2Mzhjsolp95qkhtt08kefk5r89p4pftmw8c6gi46gx",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1794208403.512016,
+      "expires": 1794220205.752132,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -135,7 +135,7 @@
       "value": "ixiweb",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1794208403.512088,
+      "expires": 1794220205.75217,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -145,17 +145,17 @@
       "value": "ol",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1813216403.515569,
+      "expires": 1813228205.754765,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "g_state",
-      "value": "{\"i_l\":0,\"i_ll\":1778656403564,\"i_b\":\"sy8gXzMx232qEGxzi657ClXoNLmcmeeXtLFEfQE4RW4\",\"i_e\":{\"enable_itp_optimization\":0},\"i_et\":1778656382926}",
+      "value": "{\"i_l\":0,\"i_ll\":1778668205761,\"i_b\":\"i+5CF3RfTxNwcHIl430X6s2rKcC8Wt9uBwmH6zhRG7A\",\"i_e\":{\"enable_itp_optimization\":18},\"i_et\":1778668181588}",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1794208403,
+      "expires": 1794220205,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -175,17 +175,17 @@
       "value": "18",
       "domain": "www.ixigo.com",
       "path": "/",
-      "expires": 1810192403.929317,
+      "expires": 1810204205.888122,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "WZRK_S_R5Z-849-WZ4Z",
-      "value": "%7B%22p%22%3A3%2C%22s%22%3A1778656377%2C%22t%22%3A1778656404%7D",
+      "value": "%7B%22p%22%3A4%2C%22s%22%3A1778668181%2C%22t%22%3A1778668209%7D",
       "domain": ".ixigo.com",
       "path": "/",
-      "expires": 1778657604,
+      "expires": 1778669409,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -201,11 +201,11 @@
         },
         {
           "name": "state",
-          "value": "106776a2-6e7b-4c00-87d8-276af357225d"
+          "value": "9d41f0cd-07c7-4179-8c3f-b6da46af9b1d"
         },
         {
           "name": "userInfo",
-          "value": "6a02772817048d716d087e1e|o4rfoid0lmglfe4nbd4y52gm8gpq83y6yt917ft7i47to11f8a3ruh86b2wf0fuc1dq2vj2ettltnlpu8vckmj3fmupyho0bf9o9l8870NmEwMjc3MjgxNzA0OGQ3MTZkMDg3ZTFlwh04j43tbwke9y46lqqoirndtlosr8xq2b7tmi15f5dvfva7t5mwkwnoi8|ixigoer||||8168925180@ixigo-dummy.com|ol|8168925180|true|91|false|ixigoer|undefined|false|1778656403517|true|"
+          "value": "69fb156dde20c879ab9d638c|sxe3l7senno29hdnmbtygl2479dunxbwy7qwqfy5rt5ryvcejvp3te8ry18lhx6vqn6lyen1rdid5f2wn8n7bnb7vkolpfm6419pq2swldohfcdadq23qjys7jrtl5NjlmYjE1NmRkZTIwYzg3OWFiOWQ2Mzhjsolp95qkhtt08kefk5r89p4pftmw8c6gi46gx|ixigoer||||8950111031@ixigo-dummy.com|ol|8950111031|true|91|false|ixigoer|undefined|false|1778668205756|true|"
         },
         {
           "name": "WZRK_L",
@@ -221,15 +221,19 @@
         },
         {
           "name": "WZRK_K",
-          "value": "%7B%22flag%22%3Atrue%2C%22id%22%3A%226a02772817048d716d087e1e%22%7D"
+          "value": "%7B%22flag%22%3Atrue%2C%22id%22%3A%2269fb156dde20c879ab9d638c%22%7D"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gtg_load_status\":{\"status\":3,\"expires\":1778754607468}}"
         },
         {
           "name": "_grecaptcha",
-          "value": "09AKhCRwiWx1pOgyGf7GHnTX-kYavNaVO3LoCqmAMeNw4MmnoDpUITbbo4gKwthOBmdonq4kxnyd1yjcaj-ic7zVpkY-y1kJD2d7kfDY-bIDxD1eGavecCbCk5jPBW9z7A"
+          "value": "09AKhCRwi0yFCjD2u52rrxUsEBC1n-hueX7_J8q6nEbhEI3hdURJaIoFxpjJZJspTvhr2OY6RqUK_59p6re3AtqhaGhRuRHSv-Qn--zUbSriJMLnpZFq6Iy4ihCPxYuYai"
         },
         {
           "name": "WZRK_ARP",
-          "value": "%7B%22j_n%22%3A%22Zw%3D%3D%22%2C%22i_n%22%3A%22ZmpjcwUJAgVhbw%3D%3D%22%2C%22d_ts%22%3A0%2C%22dh%22%3A0%2C%22v%22%3A2%2C%22j_s%22%3A%22%7B%7D%22%2C%22id%22%3A%22R5Z-849-WZ4Z%22%2C%22r_ts%22%3A1778656377%7D"
+          "value": "%7B%22j_n%22%3A%22Zw%3D%3D%22%2C%22i_n%22%3A%22ZmpjcwsFAwFjaw%3D%3D%22%2C%22d_ts%22%3A0%2C%22dh%22%3A0%2C%22v%22%3A2%2C%22j_s%22%3A%22%7B%7D%22%2C%22id%22%3A%22R5Z-849-WZ4Z%22%2C%22r_ts%22%3A1778668181%7D"
         },
         {
           "name": "perpetualUpsellSource",
@@ -237,15 +241,15 @@
         },
         {
           "name": "WZRK_X",
-          "value": "%7B%22cache%22%3A%5B%5B%226a02772817048d716d087e1e%22%2C%22e5b87d0ec45d4277a5d019b9a8e195de%22%5D%5D%7D"
+          "value": "%7B%22cache%22%3A%5B%5B%2269fb156dde20c879ab9d638c%22%2C%229f01a148cc8b4335ab32dbe00dd42428%22%5D%5D%7D"
         },
         {
           "name": "WZRK_META",
-          "value": "%7B%22ps%22%3A1778656377%2C%22cs%22%3A1778656377%2C%22sc%22%3A1%7D"
+          "value": "%7B%22ps%22%3A1778668181%2C%22cs%22%3A1778668181%2C%22sc%22%3A1%7D"
         },
         {
           "name": "WZRK_CAMP_G",
-          "value": "%7B%22e5b87d0ec45d4277a5d019b9a8e195de%22%3A%7B%22wp%22%3A%7B%221778436514%22%3A%5B%221778436514%22%2C1%2C1%5D%7D%7D%7D"
+          "value": "%7B%229f01a148cc8b4335ab32dbe00dd42428%22%3A%7B%22wp%22%3A%7B%221778436514%22%3A%5B%221778436514%22%2C1%2C1%5D%7D%7D%7D"
         },
         {
           "name": "WZRK_FPU",
@@ -256,12 +260,12 @@
           "value": "false"
         },
         {
-          "name": "WZRK_EV",
-          "value": "%7B%22wzrk_fetch%22%3A%5B1%2C1778656376%2C1778656376%5D%2C%22Page%20Visited%22%3A%5B3%2C1778656376%2C1778656407%5D%2C%22Notification%20Viewed%22%3A%5B1%2C1778656380%2C1778656380%5D%2C%22Notification%20Clicked%22%3A%5B1%2C1778656381%2C1778656381%5D%2C%22Login%20Sheet%20Open%22%3A%5B1%2C1778656383%2C1778656383%5D%2C%22Login%20Initiated%22%3A%5B1%2C1778656402%2C1778656402%5D%2C%22Login%20Success%22%3A%5B1%2C1778656403%2C1778656403%5D%7D"
-        },
-        {
           "name": "selectedFareType",
           "value": ""
+        },
+        {
+          "name": "WZRK_EV",
+          "value": "%7B%22wzrk_fetch%22%3A%5B1%2C1778668179%2C1778668179%5D%2C%22Page%20Visited%22%3A%5B3%2C1778668179%2C1778668209%5D%2C%22Login%20Sheet%20Open%22%3A%5B1%2C1778668180%2C1778668180%5D%2C%22Notification%20Viewed%22%3A%5B1%2C1778668181%2C1778668181%5D%2C%22Notification%20Clicked%22%3A%5B1%2C1778668182%2C1778668182%5D%2C%22Login%20Initiated%22%3A%5B1%2C1778668205%2C1778668205%5D%2C%22Login%20Success%22%3A%5B1%2C1778668205%2C1778668205%5D%7D"
         },
         {
           "name": "fareTypeSelected",
@@ -269,7 +273,7 @@
         },
         {
           "name": "uid",
-          "value": "999CF8E728484C5993F03172AAEA8738"
+          "value": "5ABD94CB6DB946DD82954F2CC5580A9D"
         },
         {
           "name": "WZRK_ACCOUNT_ID",
@@ -281,15 +285,15 @@
         },
         {
           "name": "OTPlessInId",
-          "value": "EDCCE86A-8322A013-4000-8-177AED22-0000708BAF4B-019E202E9B1D"
+          "value": "C7671CFD-86888AFF-4000-8-7BBAE595-0000F5016511-019E20E2971B"
         },
         {
           "name": "WZRK_PR",
-          "value": "%7B%22Name%22%3A%22ixigoer%22%2C%22Phone%22%3A918168925180%2C%22FirstName%22%3A%22ixigoer%22%2C%22Identity%22%3A%226a02772817048d716d087e1e%22%2C%22tz%22%3A%22GMT%2B0530%22%2C%22ixiUID%22%3A%221d8f91e2310c47b388ec%22%7D"
+          "value": "%7B%22Name%22%3A%22ixigoer%22%2C%22Phone%22%3A918950111031%2C%22FirstName%22%3A%22ixigoer%22%2C%22Identity%22%3A%2269fb156dde20c879ab9d638c%22%2C%22tz%22%3A%22GMT%2B0530%22%2C%22ixiUID%22%3A%2218f2a03e1cad43a9b533%22%7D"
         },
         {
           "name": "WZRK_G",
-          "value": "%22e5b87d0ec45d4277a5d019b9a8e195de%22"
+          "value": "%229f01a148cc8b4335ab32dbe00dd42428%22"
         },
         {
           "name": "WZRK_PUSH_CONFIG",
@@ -297,7 +301,7 @@
         },
         {
           "name": "WZRK_CAMP",
-          "value": "%7B%22wp%22%3A%7B%22202643%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%2C%221778656377%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%2C%22global%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%7D%7D"
+          "value": "%7B%22wp%22%3A%7B%22202643%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%2C%221778668181%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%2C%22global%22%3A%7B%221778436514%22%3A1%2C%22tc%22%3A1%7D%7D%7D"
         }
       ]
     },
@@ -306,15 +310,11 @@
       "localStorage": [
         {
           "name": "rc::a",
-          "value": "MWl2dG15YTJzbnpzMg=="
-        },
-        {
-          "name": "rc::d-1778656403545",
-          "value": "MW5pazZvbjFkODJhNm0="
+          "value": "MWo5OXU0dDF3NjI2Y3Y="
         },
         {
           "name": "rc::f",
-          "value": "0aAPQrAobAe_JQuv_8gNlGjUjjAsmZlHOgh8Kat7POUmv7lORwjnjRMjXT4U-6dc1xbEZFnic"
+          "value": "0aAPQrAoZvHcU248YmDCujpd4ahiIdEP5tr5I1PlPw5AlDvXynmEhITTM5OZJ9vDeOnUhqEYs"
         }
       ]
     }

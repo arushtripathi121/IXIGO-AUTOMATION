@@ -27,6 +27,7 @@ Feature: Bus booking flow
     Scenario: Apply bus filters and verify count changes
         Given I open the bus booking page "https://www.ixigo.com/buses"
         When I search buses with data from "valid_search"
+        When I reload the page
         And I select price filter
         And I select seats filter
         And I select rating filter
@@ -46,6 +47,7 @@ Feature: Bus booking flow
     Scenario: Apply highly restrictive filters resulting in no buses
         Given I open the bus booking page "https://www.ixigo.com/buses"
         When I search buses with data from "valid_search"
+        When I reload the page
         And I select price filter
         And I select seats filter
         And I select rating filter
@@ -60,6 +62,7 @@ Feature: Bus booking flow
     Scenario Outline: Submit passenger details
         Given I open the bus booking page "https://www.ixigo.com/buses"
         When I search buses with data from "valid_search"
+        When I reload the page
         And I open seat selection
         And I select 1 available seats
         And I select boarding point
@@ -75,6 +78,7 @@ Feature: Bus booking flow
     Scenario Outline: Submit invalid passenger details
         Given I open the bus booking page "https://www.ixigo.com/buses"
         When I search buses with data from "valid_search"
+        When I reload the page
         And I open seat selection
         And I select 1 available seats
         And I select boarding point

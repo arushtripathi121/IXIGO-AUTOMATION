@@ -12,6 +12,7 @@ Given("User should be logged in", async function () {
 
   console.log(`Using saved session: ${authFile}`);
 
+
   this.context = await browser.newContext({
     storageState: authFile,
     recordVideo: {

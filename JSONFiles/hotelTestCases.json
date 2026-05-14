@@ -1,0 +1,22 @@
+{
+  "TC01_Positive": {
+    "search": {
+      "destination": "Goa"
+    },
+    "guestDetails": {
+      "salutation": "Mr.",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "mobile": "9876543210",
+      "nationality": "Indian"
+    },
+    "expectedResult": "success"
+  },
+  "TC02_Negative_EmptyDestination": {
+    "search": {
+      "destination": ""
+    },
+    "expectedResult": "blocked"
+  }
+}
