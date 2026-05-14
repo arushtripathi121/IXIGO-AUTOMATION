@@ -41,6 +41,12 @@ When('the user loads test data for {string}', function (testCaseKey) {
  * Step: Navigate to Hotels section
  */
 When('the user clicks on "Hotels"', async function () {
+  // Initialize HomePage if not already created (since login.js doesn't do this)
+  if (!this.homePage) {
+    // First navigate to home page to ensure we can access the Hotels link
+    await this.page.goto('https://www.ixigo.com');
+    this.homePage = new HomePage(this.page);
+  }
   await this.homePage.navigateToHotels();
   this.hotelSearchPage = new HotelSearchPage(this.page);
 });

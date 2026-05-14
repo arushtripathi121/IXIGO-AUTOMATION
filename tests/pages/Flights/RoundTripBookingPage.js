@@ -29,7 +29,7 @@ class RoundTripBookingPage {
         this.bookingConfirmationButton = page.locator('//button[text() = "Confirm"]');
         this.skipProtectionButton = page.locator('//button[text() = "No, Thanks"]');
         this.continueBookingButton = page.locator('//button[contains(text(),"Continue")]').first();
-        this.flightSeatOption = page.locator('//img[@alt="w-auto seat-icon"]').nth(15);
+        this.flightSeatOption = page.locator('//img[@alt="w-auto seat-icon"]').nth(10);
         this.mealSelectionButton = page.locator('//button[text() = "Meal Selection"]')
         this.addMealOptionButton = page.locator('(//button[text() = "Add"])').nth(2)
         this.paymentProceedButton = page.locator('//button[text() = "Continue To Pay"]');

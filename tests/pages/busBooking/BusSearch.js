@@ -6,6 +6,7 @@ class BusSearch {
         this.source = page.locator('input[placeholder="Leaving From"]');
         this.destination = page.locator('input[placeholder="Going To"]');
         this.searchButton = page.locator('#search-button').first();
+        this.tomorrow = page.getByRole('button', {name: "tomorrow"});
     }
 
     async navigate(url) {
@@ -36,6 +37,8 @@ class BusSearch {
         await this.page.waitForTimeout(500);
         await expect(this.searchButton).toBeVisible();
         await expect(this.searchButton).toBeEnabled();
+        await this.tomorrow.click();
+        await this.page.waitForTimeout(1000);
         await this.searchButton.click();
         await this.page.waitForNavigation();
         return this.page;
