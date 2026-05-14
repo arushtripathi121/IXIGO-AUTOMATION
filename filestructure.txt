@@ -25,22 +25,6 @@
 |-- README.md
 |-- report.js
 |-- screenshot
-    |-- metro.png
-    |-- payment.png
-    |-- payment_page.png
-    |-- runningStatus.png
-    |-- screenshot.png
-    |-- screenshot1.png
-    |-- screenshot1231423.png
-    |-- screenshot2.png
-    |-- screenshot3.png
-    |-- Tfo_invalid pnr.png
-    |-- ticket.png
-    |-- todo.png
-    |-- Train_Ticket_invalid_pnr.png
-    |-- Train_Ticket_Sceanrio2_payment_page.png
-    |-- Vande_Bharat_Payment.png
-    |-- view.png
 |-- screenshot.png
 |-- screenshots
     |-- 1778599866996.png
