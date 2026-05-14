@@ -20,12 +20,15 @@ Given("I open the bus booking page {string}", async function(url) {
     await this.busSearch.navigate(url);
 });
 
+
+When("I reload the page", async function() {
+    await this.page.reload();
+})
+
 When("I search buses from {string} to {string}", async function(source, destination) {
     await this.busSearch.setSource(source);
     await this.busSearch.setDestination(destination);
     this.page = await this.busSearch.search();
-    await this.page.waitForTimeout(2000);
-    await this.page.reload();
 });
 
 When("I apply bus filters", async function() {

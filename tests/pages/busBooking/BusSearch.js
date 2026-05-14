@@ -40,7 +40,8 @@ class BusSearch {
         await this.tomorrow.click();
         await this.page.waitForTimeout(1000);
         await this.searchButton.click();
-        await this.page.waitForNavigation();
+        // await this.page.waitForNavigation();
+        await this.page.waitForTimeout(1000);
         return this.page;
     }
 
